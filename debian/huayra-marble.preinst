@@ -1,0 +1,18 @@
+#! /bin/sh
+set -e
+
+if [ -f /etc/default/grub ];
+then
+
+    # verificamos si tenemos la var en el archivo
+    # y de una u otra forma deshabilitamos al os-probe
+    if [ -z "$(grep -qsi grub_disable_os_prober /etc/default/grub)" ];
+    then
+        echo "GRUB_DISABLE_OS_PROBER=true" >> /etc/default/grub
+    else
+        sed -i 's,GRUB_DISABLE_OS_PROBER=.*,GRUB_DISABLE_OS_PROBER=true,' /etc/default/grub
+    fi
+
+fi
+
+#DEBHELPER#

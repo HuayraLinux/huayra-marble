@@ -1,0 +1,16 @@
+Source: huayra-marble
+Section: admin
+Priority: extra
+Build-Depends:  debhelper (>= 9.20120909)
+Maintainer: Desarrolladores de Huayra <desarrollo@huayragnulinux.com.ar>
+Standards-Version: 3.9.5
+
+Package: huayra-marble
+Architecture: all
+Depends: ${misc:Depends},
+         huayra-config-efi,
+         python (<= 2.8)
+Description: Configuraciones para las maquinas MarblePoint
+ Este paquete simplemente agrega funcionalidades destinadas a las
+ maquinas MarblePoint. Otros modelos no deberian necesitar este
+ paquete.

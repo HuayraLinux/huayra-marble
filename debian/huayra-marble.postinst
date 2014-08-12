@@ -1,0 +1,15 @@
+#! /bin/sh
+set -e
+
+if [ "$1" = "configure" ];
+then
+
+    # actualizamos al grub con las nuevas configs.
+    if test -e /boot/grub/grub.cfg && [ "$(stat -c %d/%i /)" = "$(stat -Lc %d/%i /proc/1/root 2>/dev/null)" ];
+    then
+        update-grub
+    fi
+
+fi
+
+#DEBHELPER#
