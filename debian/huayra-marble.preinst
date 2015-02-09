@@ -1,18 +1,46 @@
 #! /bin/sh
 set -e
 
-if [ -f /etc/default/grub ];
-then
+case "$1" in
 
-    # verificamos si tenemos la var en el archivo
-    # y de una u otra forma deshabilitamos al os-probe
-    if [ -z "$(grep -qsi grub_disable_os_prober /etc/default/grub)" ];
+install)
+
+        if [ -f /etc/default/grub ];
+        then
+            # verificamos si tenemos la var en el archivo
+            # y de una u otra forma deshabilitamos al os-probe
+            if [ -z "$(grep -qsi grub_disable_os_prober /etc/default/grub)" ];
+            then
+                echo "GRUB_DISABLE_OS_PROBER=true" >> /etc/default/grub
+            else
+                sed -i 's,GRUB_DISABLE_OS_PROBER=.*,GRUB_DISABLE_OS_PROBER=true,' /etc/default/grub
+            fi
+        fi
+
+    ;;
+
+upgrade)
+    # Which old version ? 
+    version=$2
+    # Normally we should not go here since it's version 1 TODO : add code here for upgrades.
+    # dpkg --compare-versions will surely be useful some day 
+
+    if [ -f /etc/X11/xorg.conf.d/marbel.conf ];
     then
-        echo "GRUB_DISABLE_OS_PROBER=true" >> /etc/default/grub
-    else
-        sed -i 's,GRUB_DISABLE_OS_PROBER=.*,GRUB_DISABLE_OS_PROBER=true,' /etc/default/grub
+        rm -f /etc/X11/xorg.conf.d/marbel.conf
     fi
 
-fi
+    ;;
+
+abort-upgrade)
+    ;;   
+
+*)
+    echo "preinst called with unknown argument '$1'" >&2
+    exit 1
+    ;;
+esac
 
 #DEBHELPER#
+
+exit 0
