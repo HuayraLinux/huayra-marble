@@ -1,3 +1,9 @@
+huayra-marble (0.6) unstable; urgency=medium
+
+  * Agrego conf de SNA para placas de video Intel
+
+ -- Mauro <mauro@sdf.org>  Thu, 12 Feb 2015 18:51:18 -0300
+
 huayra-marble (0.5) unstable; urgency=medium
 
   * Corrijo preinst
