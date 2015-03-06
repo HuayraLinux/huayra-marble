@@ -1,3 +1,9 @@
+huayra-marble (0.7) unstable; urgency=medium
+
+  * Remueve huayra-config-efi que ahora es innesesario.
+
+ -- Matias De lellis <mati86dl@gmail.com>  Wed, 25 Feb 2015 15:28:13 -0300
+
 huayra-marble (0.6) unstable; urgency=medium
 
   * Agrego conf de SNA para placas de video Intel
