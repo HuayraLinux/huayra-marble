@@ -1,3 +1,9 @@
+huayra-marble (0.9) unstable; urgency=medium
+
+  * Se realizaron actualizaciones para H3
+
+ -- Mauro <mauro@sdf.org>  Fri, 06 Mar 2015 12:32:31 -0300
+
 huayra-marble (0.8) unstable; urgency=medium
 
   * Se agregaron drivers rtl-8723
