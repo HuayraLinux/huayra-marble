@@ -1,3 +1,15 @@
+huayra-marble (0.11) unstable; urgency=medium
+
+  * D'Oh!. Arregla upgrade roto en cambio anterior.
+
+ -- Matias De lellis <mati86dl@gmail.com>  Wed, 25 Mar 2015 11:15:24 -0300
+
+huayra-marble (0.10) unstable; urgency=medium
+
+  * Elimina configuracion de ModulePath de Xorg.
+
+ -- Matias De lellis <mati86dl@gmail.com>  Wed, 25 Mar 2015 10:47:12 -0300
+
 huayra-marble (0.9) unstable; urgency=medium
 
   * Se realizaron actualizaciones para H3
