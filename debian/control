@@ -9,6 +9,7 @@ Package: huayra-marble
 Architecture: all
 Depends: ${misc:Depends},
          huayra-config-efi,
+         huayra-enable-intel-sna,
          rtl-8723-dkms,
          rtl-8723-firmware,
          python (<= 2.8)
@@ -16,3 +17,10 @@ Description: Configuraciones para las maquinas MarblePoint
  Este paquete simplemente agrega funcionalidades destinadas a las
  maquinas MarblePoint. Otros modelos no deberian necesitar este
  paquete.
+
+Package: huayra-enable-intel-sna
+Architecture: all
+Depends: ${misc:Depends}
+Description: Este paquete habilita el backend SNA (Sandybridge's New
+ Acceleration) utilizado en la nueva generacion de placas de video Intel,
+ por ejemplo el utilizado en la maquinas MarblePoint.

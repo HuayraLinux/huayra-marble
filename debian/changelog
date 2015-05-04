@@ -1,3 +1,10 @@
+huayra-marble (0.12) unstable; urgency=medium
+
+  * Separa sl paquete para configurar intel SNA para que pueda utilizarse
+   en otras computadoras.
+
+ -- Matias De lellis <mati86dl@gmail.com>  Wed, 25 Mar 2015 11:15:24 -0300
+
 huayra-marble (0.11) unstable; urgency=medium
 
   * D'Oh!. Arregla upgrade roto en cambio anterior.
