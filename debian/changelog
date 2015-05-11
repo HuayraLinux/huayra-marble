@@ -1,3 +1,9 @@
+huayra-marble (0.13) unstable; urgency=medium
+
+  * Agregando replaces para el archvio de sna
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Mon, 11 May 2015 12:43:59 -0300
+
 huayra-marble (0.12) unstable; urgency=medium
 
   * Separa sl paquete para configurar intel SNA para que pueda utilizarse

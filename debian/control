@@ -2,7 +2,7 @@ Source: huayra-marble
 Section: admin
 Priority: extra
 Build-Depends:  debhelper (>= 9.20120909)
-Maintainer: Desarrolladores de Huayra <desarrollo@huayragnulinux.com.ar>
+Maintainer: Desarrolladores de Huayra <equipohuayra@gmail.com>
 Standards-Version: 3.9.5
 
 Package: huayra-marble
@@ -20,6 +20,7 @@ Description: Configuraciones para las maquinas MarblePoint
 
 Package: huayra-enable-intel-sna
 Architecture: all
+Replaces: huayra-marble (<= 0.12)
 Depends: ${misc:Depends}
 Description: Este paquete habilita el backend SNA (Sandybridge's New
  Acceleration) utilizado en la nueva generacion de placas de video Intel,
