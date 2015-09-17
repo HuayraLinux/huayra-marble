@@ -1,3 +1,10 @@
+huayra-marble (0.16) torbellino; urgency=medium
+
+  * Agrega classmate-laptop como dependencia.
+    - Soluciona la tecla de WIFI.
+
+ -- Matias De lellis <mati86dl@gmail.com>  Thu, 17 Sep 2015 15:21:32 -0300
+
 huayra-marble (0.15) unstable; urgency=medium
 
   * Cambios de dependencias por los nuevos drivers para BT y WIFI
