@@ -13,7 +13,6 @@ Depends: ${misc:Depends},
          rtl-8723-new-dkms, firmware-realtek,
          rtk-8723-bt-dkms,
          classmate-laptop-dkms,
-         elantech-marble-dkms,
          python (<= 2.8)
 Description: Configuraciones para las maquinas MarblePoint
  Este paquete simplemente agrega funcionalidades destinadas a las
