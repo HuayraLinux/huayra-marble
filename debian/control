@@ -13,7 +13,8 @@ Depends: ${misc:Depends},
          rtl-8723-new-dkms, firmware-realtek,
          rtk-8723-bt-dkms,
          classmate-laptop-dkms,
-         python (<= 2.8)
+         python (<= 2.8),
+         huayra-partition-tools
 Description: Configuraciones para las maquinas MarblePoint
  Este paquete simplemente agrega funcionalidades destinadas a las
  maquinas MarblePoint. Otros modelos no deberian necesitar este
