@@ -2,6 +2,7 @@ huayra-marble (0.18) torbellino; urgency=medium
 
   * Ahora tiene como dependencia `huayra-partition-tools`,
     por lo que se remueven archivos de etc/grub.d y etc/huayra
+  * Correcciones en preisnt e install
 
  -- Mauro <mauro@sdf.org>  Thu, 14 Apr 2016 16:32:55 -0300
 
